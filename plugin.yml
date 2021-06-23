@@ -1,0 +1,24 @@
+name: MarkerUtils
+main: org.slabserver.plugin.markerutils.MarkerUtils
+version: 0.0.1-SNAPSHOT
+api-version: 1.15
+commands:
+  markers:
+    description: Manipulates Dynmap markers. 
+    usage: /markers <delete|info|tp> [label] <id>
+    permission: markerutils.marker
+    permission-message: You don't have permission markerutils.marker
+
+permissions:
+  markerutils.marker:
+    description: Allows you to run /marker.
+    default: true
+  markerutils.delete:
+    description: Allows you to delete markers using /marker.
+    default: op
+  markerutils.info:
+    description: Allows you to view marker information using /marker.
+    default: true
+  markerutils.tp:
+    description: Allows you to teleport to markers using /marker.
+    default: op
